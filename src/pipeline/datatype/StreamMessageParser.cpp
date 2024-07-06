@@ -18,6 +18,7 @@
 #include "depthai/pipeline/datatype/EdgeDetectorConfig.hpp"
 #include "depthai/pipeline/datatype/EncodedFrame.hpp"
 #include "depthai/pipeline/datatype/FeatureTrackerConfig.hpp"
+#include "depthai/pipeline/datatype/FeatureTrackerConfigRvc4.hpp"
 #include "depthai/pipeline/datatype/IMUData.hpp"
 #include "depthai/pipeline/datatype/ImageManipConfig.hpp"
 #include "depthai/pipeline/datatype/ImgDetections.hpp"
@@ -189,6 +190,11 @@ std::shared_ptr<ADatatype> StreamMessageParser::parseMessage(streamPacketDesc_t*
         case DatatypeEnum::FeatureTrackerConfig:
             return parseDatatype<FeatureTrackerConfig>(metadataStart, serializedObjectSize, data);
             break;
+
+        case DatatypeEnum::FeatureTrackerConfigRvc4:
+            return parseDatatype<FeatureTrackerConfigRvc4>(metadataStart, serializedObjectSize, data);
+            break;
+
         case DatatypeEnum::BenchmarkReport:
             return parseDatatype<BenchmarkReport>(metadataStart, serializedObjectSize, data);
             break;

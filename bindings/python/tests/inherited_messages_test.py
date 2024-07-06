@@ -9,6 +9,7 @@ message_types = [
     dai.CameraControl,
     dai.EdgeDetectorConfig,
     dai.FeatureTrackerConfig,
+    dai.FeatureTrackerConfigRvc4,
     dai.ImageManipConfig,
     dai.ImgDetections,
     dai.ImgFrame,

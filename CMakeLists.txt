@@ -254,6 +254,7 @@ add_library(${TARGET_CORE_NAME}
     src/pipeline/node/EdgeDetector.cpp
     src/pipeline/node/SPIIn.cpp
     src/pipeline/node/FeatureTracker.cpp
+    src/pipeline/node/FeatureTrackerRvc4.cpp
     src/pipeline/node/ToF.cpp
     src/pipeline/node/DetectionParser.cpp
     src/pipeline/node/test/MyProducer.cpp
@@ -286,6 +287,7 @@ add_library(${TARGET_CORE_NAME}
     src/pipeline/datatype/EdgeDetectorConfig.cpp
     src/pipeline/datatype/TrackedFeatures.cpp
     src/pipeline/datatype/FeatureTrackerConfig.cpp
+    src/pipeline/datatype/FeatureTrackerConfigRvc4.cpp
     src/pipeline/datatype/ToFConfig.cpp
     src/pipeline/datatype/BenchmarkReport.cpp
     src/pipeline/datatype/PointCloudConfig.cpp
